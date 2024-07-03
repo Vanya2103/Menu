@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Место для первого файла</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Место для второго файла</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTableWidget" name="tableWidget1"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QTableWidget" name="tableWidget2"/>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Получить результат</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="openTextAction"/>
+    <addaction name="openBinaryAction"/>
+    <addaction name="saveTextAction"/>
+    <addaction name="separator"/>
+    <addaction name="exitAction"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>пар</string>
+    </property>
+    <addaction name="action_2"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="openTextAction"/>
+   <addaction name="openBinaryAction"/>
+   <addaction name="saveTextAction"/>
+  </widget>
+  <action name="openBinaryAction_2">
+   <property name="text">
+    <string>О программе </string>
+   </property>
+   <property name="shortcut">
+    <string>Volume Mute</string>
+   </property>
+  </action>
+  <action name="openTextAction">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/rec/img/32x32-png-transparent-new-super-mario-bros-2-mushroom-pixel-text-super-mario-bros-rectangle.png</normaloff>:/rec/img/32x32-png-transparent-new-super-mario-bros-2-mushroom-pixel-text-super-mario-bros-rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть первый файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="saveTextAction">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/rec/img/32x32-1698867627_furman-top-p-monetka-piksel-art-oboi-22.png</normaloff>:/rec/img/32x32-1698867627_furman-top-p-monetka-piksel-art-oboi-22.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить текстовый файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+T</string>
+   </property>
+  </action>
+  <action name="openBinaryAction">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/rec/img/32x32-png-transparent-super-mario-level-up-mushroom-super-mario-bros-edible-mushroom-computer-icons-video-game-8-bit-food-leaf-text.png</normaloff>:/rec/img/32x32-png-transparent-super-mario-level-up-mushroom-super-mario-bros-edible-mushroom-computer-icons-video-game-8-bit-food-leaf-text.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть второй файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="exitAction">
+   <property name="text">
+    <string>Выйти </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>екр</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
